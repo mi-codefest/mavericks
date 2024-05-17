@@ -1,0 +1,185 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.subscriptions {
+    position: relative;
+}
+
+.subscriptions img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.banner-text h1 {
+    font-size: 24px;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+
+    background: #eee;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Aligns children (selection-area and balance-info) on opposite ends */
+    align-items: start; /* Aligns children at their top edges */
+    background: #fff;
+    width: 80%; /* Adjust to control the width of the container */
+    margin: 20px auto; /* Centered with margin */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.selection-area,
+.balance-info {
+    flex: 1; /* Allows both children to grow equally */
+    padding: 10px; /* Provides internal spacing */
+}
+
+.selection-area {
+    margin-right: 20px; /* Provides a gap between the two sections */
+}
+
+#elite-night-selection {
+    width: 100%; /* Ensures select fills the available width of its parent */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.balance-info p {
+    font-weight: bold;
+    margin: 5px 0; /* Consistent vertical spacing */
+}
+
+/* Optional responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks children vertically on smaller screens */
+    }
+    .selection-area,
+    .balance-info {
+        flex: none; /* Removes flex grow on smaller screens */
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Removes the margin-right on the selection area in mobile view */
+    }
+}
+.payment-information {
+    display: none;
+    background: white;
+    padding: 20px;
+    width: 570px; /* Adjusted width based on the screenshot */
+    margin: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.purchase-info{
+display: none;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.flex-inputs {
+    display: flex;
+    justify-content: space
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
